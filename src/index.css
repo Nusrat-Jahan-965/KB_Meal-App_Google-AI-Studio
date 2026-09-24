@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* High contrast light theme for banking staff */
+  --bg-app: #f4f7fb;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-muted: #eef2f7;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --border-color: #cbd5e1;
+  --border-subtle: #e2e8f0;
+  --border-strong: #94a3b8;
+
+  --bank-primary: #064e2b;
+  --bank-primary-hover: #04381f;
+  --bank-primary-light: #e8f5e9;
+  --bank-accent: #281a67;
+
+  --status-success: #15803d;
+  --status-success-bg: #dcfce7;
+  --status-warning: #b45309;
+  --status-warning-bg: #fef3c7;
+  --status-danger: #b91c1c;
+  --status-danger-bg: #fee2e2;
+  --status-info: #1d4ed8;
+  --status-info-bg: #dbeafe;
+
+  --table-head-bg: #f1f5f9;
+  --table-row-hover: #f8fafc;
+  --table-border: #e2e8f0;
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+}
+
+.dark {
+  /* High contrast dark theme for banking staff interface (WCAG AAA compliant) */
+  --bg-app: #090d16;
+  --bg-surface: #111827;
+  --bg-surface-elevated: #1a2333;
+  --bg-subtle: #151d2d;
+  --bg-muted: #1e293b;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-inverse: #090d16;
+
+  --border-color: #334155;
+  --border-subtle: #1e293b;
+  --border-strong: #475569;
+
+  --bank-primary: #10b981;
+  --bank-primary-hover: #34d399;
+  --bank-primary-light: rgba(16, 185, 129, 0.15);
+  --bank-accent: #a5b4fc;
+
+  --status-success: #4ade80;
+  --status-success-bg: rgba(74, 222, 128, 0.18);
+  --status-warning: #fbbf24;
+  --status-warning-bg: rgba(251, 191, 36, 0.18);
+  --status-danger: #f87171;
+  --status-danger-bg: rgba(248, 113, 113, 0.22);
+  --status-info: #60a5fa;
+  --status-info-bg: rgba(96, 165, 250, 0.18);
+
+  --table-head-bg: #172236;
+  --table-row-hover: #1e2a3f;
+  --table-border: #334155;
+  --input-bg: #151e2e;
+  --input-border: #475569;
+}
+
+/* Nikosh & SolaimanLipi Web Fonts with Local Fallback */
+@font-face {
+  font-family: 'Nikosh';
+  src: local('Nikosh'), local('NikoshBAN'), url('/fonts/Nikosh.ttf') format('truetype'), url('https://fonts.maateen.me/nikosh/nikosh-v1.0.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: local('SolaimanLipi'), local('Solaiman Lipi'), url('/fonts/SolaimanLipi.ttf') format('truetype'), url('https://fonts.maateen.me/solaiman-lipi/solaimanlipi-normal-v1.0.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SolaimanLipi';
+  src: local('SolaimanLipi Bold'), local('Solaiman Lipi Bold'), url('/fonts/SolaimanLipi-Bold.ttf') format('truetype'), url('https://fonts.maateen.me/solaiman-lipi/solaimanlipi-bold-v1.0.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'Nikosh', 'NikoshBAN', 'SolaimanLipi', 'Solaiman Lipi', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  button, input, select, textarea, optgroup {
+    font-family: inherit;
+  }
+}
+
+/* ========================================================================= */
+/* Banking Staff High Contrast Global Adaptations                            */
+/* ========================================================================= */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .bg-white {
+  background-color: var(--bg-surface) !important;
+}
+
+.dark .bg-gray-50,
+.dark .bg-slate-50 {
+  background-color: var(--bg-subtle) !important;
+}
+
+.dark .bg-gray-100,
+.dark .bg-slate-100 {
+  background-color: var(--bg-muted) !important;
+}
+
+.dark .text-gray-900,
+.dark .text-slate-900,
+.dark .text-gray-800,
+.dark .text-slate-800 {
+  color: var(--text-primary) !important;
+}
+
+.dark .text-gray-700,
+.dark .text-slate-700 {
+  color: var(--text-secondary) !important;
+}
+
+.dark .text-gray-600,
+.dark .text-slate-600,
+.dark .text-gray-500,
+.dark .text-slate-500 {
+  color: var(--text-muted) !important;
+}
+
+.dark .border-gray-200,
+.dark .border-slate-200,
+.dark .border-gray-100,
+.dark .border-slate-100 {
+  border-color: var(--border-color) !important;
+}
+
+.dark .border-gray-300,
+.dark .border-slate-300 {
+  border-color: var(--border-strong) !important;
+}
+
+.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]),
+.dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]),
+.dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--border-color) !important;
+}
+
+/* High contrast inputs & forms for banking staff */
+.dark input:not([type="checkbox"]):not([type="radio"]),
+.dark select,
+.dark textarea {
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+  color: var(--text-primary) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Financial Ledger Tables & Lists */
+.dark thead {
+  background-color: var(--table-head-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+.dark tbody tr:hover {
+  background-color: var(--table-row-hover) !important;
+}
+
+/* High contrast modal overlay */
+.dark .bg-black\/50,
+.dark .bg-black\/60 {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Bank Emblem Badge in Dark Mode */
+.dark [data-purpose="karmasangsthan-bank-emblem"] {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5), 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Smooth transition for theme toggling */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

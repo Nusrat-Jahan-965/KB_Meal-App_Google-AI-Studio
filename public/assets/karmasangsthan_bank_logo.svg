@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Top Arc Path for Bengali Text: Curves along upper half (left to right) -->
+    <path id="kb-top-arc" d="M 23 93 A 78.5 78.5 0 0 1 177 93" fill="none" />
+    <!-- Bottom Arc Path for English Text: Curves along lower half (left to right) -->
+    <path id="kb-bottom-arc" d="M 23 107 A 78.5 78.5 0 0 0 177 107" fill="none" />
+  </defs>
+
+  <!-- Clean White Circular Base -->
+  <circle cx="100" cy="100" r="98" fill="#ffffff" />
+
+  <!-- Outer Ring (Deep Royal Indigo / Navy) -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#281a67" stroke-width="4.5" />
+
+  <!-- Inner Ring (Deep Royal Indigo / Navy) -->
+  <circle cx="100" cy="100" r="66" fill="none" stroke="#281a67" stroke-width="3.2" />
+
+  <!-- Left & Right Red Accent Dots in Ribbon -->
+  <circle cx="23" cy="100" r="6.2" fill="#d9242a" />
+  <circle cx="177" cy="100" r="6.2" fill="#d9242a" />
+
+  <!-- Top Curved Text: কর্মসংস্থান ব্যাংক (Rich Green) -->
+  <text fill="#007e3a" font-family="'Hind Siliguri', 'SolaimanLipi', 'Noto Sans Bengali', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="0.3px">
+    <textPath href="#kb-top-arc" startOffset="50%" text-anchor="middle">
+      কর্মসংস্থান ব্যাংক
+    </textPath>
+  </text>
+
+  <!-- Bottom Curved Text: KARMASANGSTHAN BANK (Deep Royal Indigo / Navy) -->
+  <text fill="#281a67" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-size="12.5" font-weight="900" letter-spacing="0.8px">
+    <textPath href="#kb-bottom-arc" startOffset="50%" text-anchor="middle">
+      KARMASANGSTHAN BANK
+    </textPath>
+  </text>
+
+  <!-- ==================================================== -->
+  <!-- CENTRAL TRI-PARTITE SPOKES (Dividing 3 Key Sectors) -->
+  <!-- ==================================================== -->
+  <line x1="100" y1="100" x2="100" y2="34" stroke="#281a67" stroke-width="3.2" stroke-linecap="round" />
+  <line x1="100" y1="100" x2="43" y2="133" stroke="#281a67" stroke-width="3.2" stroke-linecap="round" />
+  <line x1="100" y1="100" x2="157" y2="133" stroke="#281a67" stroke-width="3.2" stroke-linecap="round" />
+
+  <!-- ==================================================== -->
+  <!-- SECTOR 1: UPPER-LEFT - SEWING MACHINE (সেলাই মেশিন) -->
+  <!-- ==================================================== -->
+  <g id="sewing-machine" fill="#281a67">
+    <!-- Base Plate -->
+    <rect x="52" y="93" width="42" height="3.2" rx="0.8" />
+    <polygon points="53,96.2 93,96.2 91,97.8 55,97.8" />
+    <!-- Main Column & Upper Horizontal Arm -->
+    <path d="M 57 93 L 57 73 C 57 68 60 66 66 66 L 82 66 C 87 66 89 68.5 89 73.5 L 89 77 C 89 79 87 80 85 80 L 82.5 80 L 82.5 73.5 C 82.5 72.5 81.5 71.5 80 71.5 L 67 71.5 C 64 71.5 63 73.5 63 76.5 L 63 93 Z" />
+    <!-- Handwheel on left -->
+    <ellipse cx="55.5" cy="74.5" rx="2.5" ry="6.5" />
+    <circle cx="55.5" cy="74.5" r="1.2" fill="#ffffff" />
+    <!-- Spool Pin & Thread Spool on top -->
+    <rect x="67.5" y="62" width="1.5" height="4" />
+    <rect x="65.5" y="63" width="5.5" height="3" rx="0.6" />
+    <!-- Needle Bar, Foot and Needle -->
+    <rect x="85" y="79" width="2" height="9.5" />
+    <line x1="86" y1="88.5" x2="86" y2="93" stroke="#281a67" stroke-width="1.6" />
+    <!-- Tension Dial / Stitch Knob -->
+    <circle cx="81.5" cy="73.5" r="2.2" />
+    <circle cx="81.5" cy="73.5" r="0.9" fill="#ffffff" />
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- SECTOR 2: UPPER-RIGHT - HEN, FISH & CROP SEEDLINGS -->
+  <!-- ==================================================== -->
+  <!-- 1. Poultry Bird / Hen (Top) facing right -->
+  <g id="hen" fill="#281a67">
+    <path d="M 124 51 C 127 51 129 53 131 55 C 132 56 134 56.5 135 56.5 C 133 58 131 58.5 129 58.5 C 128 62 125 65 120 65 C 115 65 111 62 110 59 C 108 55 111 51 116 51 C 117 48 120 48 123 50 Z" />
+    <!-- Red Comb & Beak -->
+    <path d="M 130.5 52 C 131.5 50 133.5 50.5 133.5 52.5 Z" fill="#d9242a" />
+    <polygon points="135,56 138,57.5 135,59" fill="#281a67" />
+    <!-- Eye -->
+    <circle cx="129" cy="54.5" r="0.8" fill="#ffffff" />
+    <!-- Upward Tail Feathers -->
+    <path d="M 110 57 C 108 53 105 52 107 49 C 109 51 111 54 112 56 Z" />
+    <!-- Legs -->
+    <line x1="118" y1="65" x2="117" y2="69" stroke="#281a67" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="121" y1="65" x2="122" y2="69" stroke="#281a67" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- 2. Fish (Middle) facing left -->
+  <g id="fish" fill="#281a67">
+    <path d="M 110 77 C 115 72 127 72 134 76 L 141 72 L 140 77 L 141 82 L 134 78 C 127 82 115 82 110 77 Z" />
+    <!-- Dorsal Fin -->
+    <path d="M 122 73 C 125 70 129 70 131 73 Z" />
+    <!-- Pectoral / Pelvic Fin -->
+    <path d="M 122 81 C 124 83 127 83 128 81 Z" />
+    <!-- Eye -->
+    <circle cx="114" cy="76" r="1.1" fill="#ffffff" />
+    <circle cx="114" cy="76" r="0.5" fill="#281a67" />
+    <!-- Gill Slit -->
+    <path d="M 117 74 C 118 76 118 78 117 79" stroke="#ffffff" stroke-width="0.8" fill="none" />
+  </g>
+
+  <!-- 3. Three Green Seedlings in Soil Boxes (Bottom) -->
+  <g id="seedlings" stroke="#007e3a" fill="#007e3a">
+    <!-- Plant 1 (Left) -->
+    <g transform="translate(110, 84)">
+      <rect x="0" y="8" width="5.5" height="5" rx="0.5" fill="#007e3a" stroke="none" />
+      <line x1="2.7" y1="8" x2="2.7" y2="0" stroke-width="1.4" />
+      <line x1="2.7" y1="5.5" x2="0" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="5.5" x2="5.4" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="-0.5" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="5.9" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <circle cx="2.7" cy="-0.5" r="1" />
+    </g>
+
+    <!-- Plant 2 (Center) -->
+    <g transform="translate(122, 84)">
+      <rect x="0" y="8" width="5.5" height="5" rx="0.5" fill="#007e3a" stroke="none" />
+      <line x1="2.7" y1="8" x2="2.7" y2="0" stroke-width="1.4" />
+      <line x1="2.7" y1="5.5" x2="0" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="5.5" x2="5.4" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="-0.5" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="5.9" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <circle cx="2.7" cy="-0.5" r="1" />
+    </g>
+
+    <!-- Plant 3 (Right) -->
+    <g transform="translate(134, 84)">
+      <rect x="0" y="8" width="5.5" height="5" rx="0.5" fill="#007e3a" stroke="none" />
+      <line x1="2.7" y1="8" x2="2.7" y2="0" stroke-width="1.4" />
+      <line x1="2.7" y1="5.5" x2="0" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="5.5" x2="5.4" y2="2" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="-0.5" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <line x1="2.7" y1="2.5" x2="5.9" y2="-0.5" stroke-width="1.3" stroke-linecap="round" />
+      <circle cx="2.7" cy="-0.5" r="1" />
+    </g>
+  </g>
+
+  <!-- ==================================================== -->
+  <!-- SECTOR 3: BOTTOM - COMPUTER SYSTEM (ICT / DIGITAL)  -->
+  <!-- ==================================================== -->
+  <g id="computer-system">
+    <!-- Monitor Outer Frame (Vibrant Green) -->
+    <rect x="85" y="108" width="30" height="23" rx="3.5" fill="#ffffff" stroke="#007e3a" stroke-width="2.5" />
+    <!-- Monitor Inner Screen (Green Bezel & Display) -->
+    <rect x="88.5" y="111.5" width="23" height="16" rx="2" fill="#ecfdf5" stroke="#007e3a" stroke-width="1.6" />
+    <path d="M 91.5 114.5 L 98 114.5" stroke="#007e3a" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Monitor Swivel Neck Base -->
+    <polygon points="95,131 105,131 107,135 93,135" fill="#007e3a" />
+
+    <!-- CPU Desktop Case Underneath Monitor -->
+    <rect x="83" y="135" width="34" height="11" rx="2" fill="#ffffff" stroke="#007e3a" stroke-width="2.2" />
+    <!-- Drive Bays & Power Indicator on Front Panel -->
+    <line x1="87" y1="139" x2="101" y2="139" stroke="#007e3a" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="87" y1="142.5" x2="97" y2="142.5" stroke="#007e3a" stroke-width="1.2" stroke-linecap="round" />
+    <circle cx="111" cy="140" r="1.5" fill="#007e3a" />
+
+    <!-- Isometric Angled Keyboard (Deep Royal Indigo / Navy) -->
+    <g id="keyboard">
+      <polygon points="66,155 98,146 106,155 72,165" fill="#ffffff" stroke="#281a67" stroke-width="2.2" stroke-linejoin="round" />
+      <line x1="71" y1="154" x2="100" y2="147" stroke="#281a67" stroke-width="1.2" stroke-dasharray="1.8 1.5" />
+      <line x1="73" y1="157.5" x2="102" y2="150" stroke="#281a67" stroke-width="1.2" stroke-dasharray="1.8 1.5" />
+      <line x1="75" y1="161" x2="104" y2="153" stroke="#281a67" stroke-width="1.2" stroke-dasharray="2 1.5" />
+    </g>
+
+    <!-- Optical Mouse & Curved Cable -->
+    <g id="mouse">
+      <ellipse cx="117" cy="157" rx="5" ry="3.5" transform="rotate(-25 117 157)" fill="#ffffff" stroke="#281a67" stroke-width="1.8" />
+      <line x1="116" y1="154" x2="118" y2="159" stroke="#281a67" stroke-width="1.2" />
+      <path d="M 115 154 C 111 150 120 148 114 144" fill="none" stroke="#281a67" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

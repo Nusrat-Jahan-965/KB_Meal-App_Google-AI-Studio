@@ -1,0 +1,6 @@
+{
+  "name": "কর্মসংস্থান ব্যাংক - মিল বুকিং সিস্টেম",
+  "description": "কর্মসংস্থান ব্যাংকের কর্মকর্তা-কর্মচারীদের জন্য আধুনিক মিল বুকিং, দৈনিক বাজার হিসাব ও ক্যান্টিন ব্যবস্থাপনা পোর্টাল।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
